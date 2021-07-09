@@ -1,0 +1,135 @@
+/* COLORES
+
+TARJETAS
+RED: hsl(0,78%, 62%)
+CYAN: hsl(180,62%,55%)
+ORANGE: hsl(34,97%,64%)
+BLUE: hsl(212,86%,64%)
+
+SOMBRA
+DARK BLUE: hsl(240,25%,50%) al 20% de opacidad;
+
+TEXTO 
+GREY: hsl(229,6%,66%)
+
+FONDO DE LA TARJETA Y DEL BACKGROUND
+WHITE: hsl(0,0%,93%)
+
+FONTS
+https://fonts.google.com/specimen/Poppins
+ESTILOS 200, 400 y 600
+*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --redcard: hsl(0, 78%, 62%);
+  --cyancard: hsl(180, 62%, 55%);
+  --orangecard: hsl(34, 97%, 64%);
+  --bluecard: hsl(212, 86%, 64%);
+  --darkshadow: hsl(240, 25%, 50%);
+  --textgrey: hsl(229, 6%, 66%);
+  --fondowhite: hsl(0, 0%, 93%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 93%);
+  text-align: center;
+  font-weight: 400;
+}
+
+.main-title {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  position: relative;
+  width: 1200px;
+  height: 550px;
+  margin: 5em auto;
+}
+
+.card {
+  position: absolute;
+  padding: 0 2em;
+  width: 350px;
+  height: 250px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px hsl(240 25% 50% / 0.2);
+  background-color: hsl(0, 0%, 93%);
+}
+
+.card__text,
+.card__title {
+  text-align: left;
+}
+
+.card__icon {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+}
+
+.card--cyan {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card--red {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card--orange {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card--blue {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card--left,
+.card--right {
+  top: 150px;
+}
+
+.card--top,
+.card--bottom {
+  left: 425px;
+}
+
+.card--left {
+  left: 0;
+}
+
+.card--top {
+  top: 0;
+}
+
+.card--right {
+  right: 0;
+}
+
+.card--bottom {
+  bottom: 0;
+}
+
+.text-light {
+  color: hsl(229, 6%, 66%);
+}
+
+.text-thin {
+  font-weight: 200;
+}
+
+.text-bold {
+  font-weight: 600;
+}
